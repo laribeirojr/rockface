@@ -1,0 +1,140 @@
+{
+ "version": 1,
+ "note": "Order of the user guide (site, PDF and Help contents). Every page of docs/guide/en must appear exactly once.",
+ "parts": [
+  {
+   "key": "start",
+   "title": {
+    "en": "Getting started",
+    "pt": "Primeiros passos",
+    "es": "Primeros pasos"
+   },
+   "pages": [
+    "getting_started",
+    "projects_descriptions",
+    "scripting",
+    "server",
+    "help_plugins",
+    "feedback"
+   ]
+  },
+  {
+   "key": "petro",
+   "title": {
+    "en": "RockFace Petro",
+    "pt": "RockFace Petro",
+    "es": "RockFace Petro"
+   },
+   "pages": [
+    "identification",
+    "macro_micro_description",
+    "pore_system",
+    "composition",
+    "composition_colours",
+    "point_counting",
+    "totals",
+    "classifications",
+    "classifications_packing",
+    "diagenesis",
+    "analyses_requests",
+    "reports",
+    "exchange",
+    "exports",
+    "catalogue_exchange",
+    "well_trajectory",
+    "nomenclature_knowledge_base"
+   ]
+  },
+  {
+   "key": "atlas",
+   "title": {
+    "en": "RockFace Atlas",
+    "pt": "RockFace Atlas",
+    "es": "RockFace Atlas"
+   },
+   "pages": [
+    "atlas_viewer",
+    "atlas_annotations",
+    "mineral_maps",
+    "spot_analyses",
+    "file_formats",
+    "composite_3d_publication"
+   ]
+  },
+  {
+   "key": "explorer",
+   "title": {
+    "en": "RockFace Explorer",
+    "pt": "RockFace Explorer",
+    "es": "RockFace Explorer"
+   },
+   "pages": [
+    "explorer_queries",
+    "explorer_dashboard",
+    "groups_figures",
+    "las_export",
+    "dating",
+    "evolution_column"
+   ]
+  },
+  {
+   "key": "lab",
+   "title": {
+    "en": "RockFace Lab",
+    "pt": "RockFace Lab",
+    "es": "RockFace Lab"
+   },
+   "pages": [
+    "lab_preparation",
+    "lab_registration_calculator",
+    "lab_segmentation",
+    "random_forest",
+    "lab_editing_objects",
+    "lab_measurements",
+    "transitions",
+    "lab_flows",
+    "map_alignment_big_volumes",
+    "suggest_description"
+   ]
+  },
+  {
+   "key": "mc",
+   "title": {
+    "en": "RockFace MC",
+    "pt": "RockFace MC",
+    "es": "RockFace MC"
+   },
+   "pages": [
+    "mc_volumes",
+    "mc_segmentation_registration",
+    "volume_tools",
+    "pore_network",
+    "open_rock_data",
+    "microporosity",
+    "multiscale",
+    "surfaces_exchange",
+    "jobs",
+    "permeability_model",
+    "mc_cores",
+    "mc_image_logs",
+    "log_editing",
+    "mc_more_tools"
+   ]
+  },
+  {
+   "key": "ai",
+   "title": {
+    "en": "RockFace AI and Mio",
+    "pt": "RockFace AI e Mio",
+    "es": "RockFace AI y Mio"
+   },
+   "pages": [
+    "ai_setup_hub",
+    "ai_segmentation",
+    "ai_generation_spots",
+    "mio",
+    "mio_skills"
+   ]
+  }
+ ]
+}

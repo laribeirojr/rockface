@@ -1,0 +1,64 @@
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a class="footer-brand" href="{{ROOT}}">
+              <img src="{{AROOT}}assets/apple-touch-icon.png" width="180" height="180" style="width:30px;height:30px" alt="" />
+              <span>RockFace Suite</span>
+            </a>
+            <p class="footer-about">{{T_FOOTER_ABOUT}}</p>
+          </div>
+          <div class="footer-col">
+            <h3>{{T_APPS}}</h3>
+            <ul>
+              <li><a href="{{ROOT}}guide/identification/">RockFace Petro</a></li>
+              <li><a href="{{ROOT}}guide/atlas_viewer/">RockFace Atlas</a></li>
+              <li><a href="{{ROOT}}guide/explorer_queries/">RockFace Explorer</a></li>
+              <li><a href="{{ROOT}}guide/lab_preparation/">RockFace Lab</a></li>
+              <li><a href="{{ROOT}}guide/mc_volumes/">RockFace MC</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>{{T_GUIDES}}</h3>
+            <ul>
+              <li><a href="{{ROOT}}guide/">{{T_GUIDE}}</a></li>
+              <li><a href="{{AROOT}}downloads/{{GUIDE_PDF}}">{{T_GUIDE_PDF}}</a></li>
+              <li><a href="{{ROOT}}guide/getting_started/">{{T_START}}</a></li>
+              <li><a href="{{ROOT}}guide/scripting/">{{T_SCRIPTS}}</a></li>
+              <li><a href="{{ROOT}}guide/mio/">Mio</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>{{T_PROJECT}}</h3>
+            <ul>
+              <li><a href="{{ROOT}}#feedback">{{T_FEEDBACK}}</a></li>
+              <li><a href="https://laribeirojr.github.io/scivelyx/">SciVelyx Suite</a></li>
+              <li><a href="{{AROOT}}assets/fonts/eb-garamond-OFL.txt">{{T_FONTS}}</a></li>
+              <li><a href="{{AROOT}}assets/LICENSE-MDraft.txt">{{T_CREDITS}}</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© {{YEAR}} RockFace Suite · SciVelyx Suite. {{T_FOOTER_FONTS}}
+            <a href="https://bgeneto.github.io/MDraft/">MDraft</a> (MIT).</p>
+          <p>{{T_NO_COOKIES}}</p>
+          <nav class="lang-switch" aria-label="{{T_LANGUAGE}}">
+            <a href="{{URL_EN}}" hreflang="en" lang="en" aria-current="{{CUR_EN}}">EN</a>
+            <a href="{{URL_PT}}" hreflang="pt-BR" lang="pt-BR" aria-current="{{CUR_PT}}">PT</a>
+            <a href="{{URL_ES}}" hreflang="es" lang="es" aria-current="{{CUR_ES}}">ES</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+      <div class="lightbox-inner">
+        <button class="lightbox-close" type="button" data-lightbox-close aria-label="{{T_CLOSE_IMAGE}}">×</button>
+        <button class="lightbox-prev" type="button" data-lightbox-prev aria-label="{{T_PREV}}" hidden>‹</button>
+        <img data-lightbox-image alt="" />
+        <button class="lightbox-next" type="button" data-lightbox-next aria-label="{{T_NEXT}}" hidden>›</button>
+        <p class="lightbox-caption" id="lightbox-caption" data-lightbox-caption></p>
+      </div>
+    </dialog>
+
+    <script src="{{AROOT}}site.js" defer></script>

@@ -1,0 +1,42 @@
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{TITLE}}</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
+    <meta name="author" content="RockFace Suite" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fbfaf6" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#06111f" media="(prefers-color-scheme: dark)" />
+    <link rel="canonical" href="{{CANONICAL}}" />
+    <link rel="alternate" hreflang="en" href="{{ABS_EN}}" />
+    <link rel="alternate" hreflang="pt-BR" href="{{ABS_PT}}" />
+    <link rel="alternate" hreflang="es" href="{{ABS_ES}}" />
+    <link rel="alternate" hreflang="x-default" href="{{ABS_EN}}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="RockFace Suite" />
+    <meta property="og:locale" content="{{OG_LOCALE}}" />
+    <meta property="og:title" content="{{TITLE}}" />
+    <meta property="og:description" content="{{DESCRIPTION}}" />
+    <meta property="og:url" content="{{CANONICAL}}" />
+    <meta property="og:image" content="{{OG_IMAGE}}" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="RockFace Suite logo beside a screenshot of RockFace Petro." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="{{TITLE}}" />
+    <meta name="twitter:description" content="{{DESCRIPTION}}" />
+    <meta name="twitter:image" content="{{OG_IMAGE}}" />
+
+    <link rel="icon" href="{{AROOT}}assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="{{AROOT}}assets/apple-touch-icon.png" />
+    <link rel="preload" href="{{AROOT}}assets/fonts/eb-garamond.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="{{AROOT}}styles.css" />
+    <script>
+      try {
+        const theme = localStorage.getItem("rockface-theme");
+        if (theme === "light" || theme === "dark") document.documentElement.dataset.theme = theme;
+      } catch {
+        // Storage can be unavailable in a private window; follow the OS theme.
+      }
+    </script>

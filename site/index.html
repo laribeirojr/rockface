@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}">
+  <head>
+{{> head}}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "{{SITE_URL}}#site",
+            "url": "{{SITE_URL}}",
+            "name": "RockFace Suite",
+            "inLanguage": "{{HTML_LANG}}"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "{{SITE_URL}}#app",
+            "name": "RockFace Suite",
+            "applicationCategory": "ScientificApplication",
+            "softwareVersion": "{{VERSION}}",
+            "url": "{{SITE_URL}}",
+            "screenshot": "{{SITE_URL}}assets/guide/en/atlas_viewer.webp"
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+{{> header}}
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">{{H_EYEBROW}}</p>
+            <h1 id="hero-title">{{H_TITLE_1}} <span class="mark">{{H_TITLE_2}}</span></h1>
+            <p class="lead">{{H_LEAD}}</p>
+            <div class="actions">
+              <a class="btn btn-primary" href="guide/">{{H_READ_GUIDE}}</a>
+              <a class="btn btn-ghost" href="{{AROOT}}downloads/{{GUIDE_PDF}}">{{T_GUIDE_PDF}}</a>
+            </div>
+            <p class="fineprint">{{H_FINEPRINT}}</p>
+            <div class="chips" aria-label="{{H_GLANCE}}">
+              <span class="chip"><strong>5</strong> {{H_CHIP_APPS}}</span>
+              <span class="chip"><strong>3</strong> {{H_CHIP_LANGS}}</span>
+              <span class="chip"><strong>{{PAGES}}</strong> {{H_CHIP_PAGES}}</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <a class="shot hero-shot" href="{{AROOT}}assets/guide/{{IMG_LANG}}/atlas_viewer.webp"
+               data-full="{{AROOT}}assets/guide/{{IMG_LANG}}/atlas_viewer.webp" data-caption="{{H_HERO_CAPTION}}" data-gallery="hero">
+              <img src="{{AROOT}}assets/guide/{{IMG_LANG}}/atlas_viewer.webp" width="{{HERO_W}}" height="{{HERO_H}}" fetchpriority="high"
+                   decoding="async" alt="{{H_HERO_ALT}}" />
+            </a>
+            <span class="zoom-hint">{{H_ZOOM}}</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="apps" class="section" aria-labelledby="apps-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">{{T_APPS}}</p>
+            <h2 id="apps-title">{{H_APPS_TITLE}}</h2>
+            <p class="lead">{{H_APPS_LEAD}}</p>
+          </div>
+          <div class="app-grid">
+            <article class="app-card featured">
+              <span class="status live">v{{VERSION}}</span>
+              <h3>RockFace Petro</h3>
+              <p>{{H_PETRO}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/identification/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+            <article class="app-card">
+              <h3>RockFace Atlas</h3>
+              <p>{{H_ATLAS}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/atlas_viewer/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+            <article class="app-card">
+              <h3>RockFace Explorer</h3>
+              <p>{{H_EXPLORER}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/explorer_queries/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+            <article class="app-card">
+              <h3>RockFace Lab</h3>
+              <p>{{H_LAB}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/lab_preparation/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+            <article class="app-card">
+              <h3>RockFace MC</h3>
+              <p>{{H_MC}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/mc_volumes/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+            <article class="app-card">
+              <h3>{{H_AI_TITLE}}</h3>
+              <p>{{H_AI}}</p>
+              <div class="actions"><a class="btn btn-ghost" href="guide/mio/">{{T_GUIDE_SHORT}}</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="explorer" class="section panel-dark ai-section" aria-labelledby="explorer-title">
+        <div class="container">
+          <div class="ai-grid landscape">
+            <div>
+              <p class="eyebrow">{{H_ONE_EYEBROW}}</p>
+              <h2 id="explorer-title">{{H_ONE_TITLE}}</h2>
+              <p class="lead">{{H_ONE_LEAD}}</p>
+              <ul class="feature-list">
+                <li>{{H_ONE_1}}</li>
+                <li>{{H_ONE_2}}</li>
+                <li>{{H_ONE_3}}</li>
+                <li>{{H_ONE_4}}</li>
+              </ul>
+              <div class="actions">
+                <a class="btn btn-primary" href="guide/getting_started/">{{T_START}}</a>
+              </div>
+            </div>
+            <figure class="ai-palette">
+              <a class="shot" href="{{AROOT}}assets/guide/{{IMG_LANG}}/explorer_dashboard.webp"
+                 data-full="{{AROOT}}assets/guide/{{IMG_LANG}}/explorer_dashboard.webp" data-caption="{{H_DASH_CAPTION}}"
+                 data-gallery="home">
+                <img src="{{AROOT}}assets/guide/{{IMG_LANG}}/explorer_dashboard.webp" width="{{DASH_W}}" height="{{DASH_H}}" loading="lazy"
+                     decoding="async" alt="{{H_DASH_ALT}}" />
+              </a>
+              <figcaption>{{H_DASH_CAPTION}} <span class="zoom-hint">{{H_ZOOM}}</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="principles" class="section" aria-labelledby="principles-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">{{H_PRINCIPLES}}</p>
+            <h2 id="principles-title">{{H_PRINCIPLES_TITLE}}</h2>
+            <p class="lead">{{H_PRINCIPLES_LEAD}}</p>
+          </div>
+          <div class="quiet-grid">
+            <div class="quiet-card"><strong>1</strong><span>{{H_Q1}}</span></div>
+            <div class="quiet-card"><strong>0</strong><span>{{H_Q2}}</span></div>
+            <div class="quiet-card"><strong>3</strong><span>{{H_Q3}}</span></div>
+            <div class="quiet-card"><strong>API</strong><span>{{H_Q4}}</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="feedback" class="section" aria-labelledby="feedback-title">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">{{T_FEEDBACK}}</p>
+            <h2 id="feedback-title">{{H_FB_TITLE}}</h2>
+            <p class="lead">{{H_FB_LEAD}}</p>
+          </div>
+{{FEEDBACK_BLOCK}}
+        </div>
+      </section>
+
+      <section id="faq" class="section" aria-labelledby="faq-title">
+        <div class="container faq-grid">
+          <div class="section-head">
+            <p class="eyebrow">{{H_FAQ}}</p>
+            <h2 id="faq-title">{{H_FAQ_TITLE}}</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>{{H_FAQ1_Q}}</summary>
+              <p>{{H_FAQ1_A}}</p>
+            </details>
+            <details>
+              <summary>{{H_FAQ2_Q}}</summary>
+              <p>{{H_FAQ2_A}}</p>
+            </details>
+            <details>
+              <summary>{{H_FAQ3_Q}}</summary>
+              <p>{{H_FAQ3_A}}</p>
+            </details>
+            <details>
+              <summary>{{H_FAQ4_Q}}</summary>
+              <p>{{H_FAQ4_A}}</p>
+            </details>
+            <details>
+              <summary>{{H_FAQ5_Q}}</summary>
+              <p>{{H_FAQ5_A}}</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" aria-labelledby="final-title">
+        <div class="container">
+          <p class="eyebrow eyebrow-center">{{H_FINAL_EYEBROW}}</p>
+          <h2 id="final-title">{{H_FINAL_TITLE}}</h2>
+          <p>{{H_FINAL_TEXT}}</p>
+          <div class="actions actions-center">
+            <a class="btn btn-primary" href="guide/">{{H_READ_GUIDE}}</a>
+            <a class="btn btn-ghost" href="{{AROOT}}downloads/{{GUIDE_PDF}}">{{T_GUIDE_PDF}}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+{{> footer}}
+  </body>
+</html>

@@ -1,0 +1,11 @@
+# RockFace Suite website settings (read by scripts/build_site.py and scripts/build_manual.py).
+
+[site]
+origin = "https://laribeirojr.github.io"
+base_path = "/rockface"
+
+[rockface]
+# the version whose guide is published (the guide pages and pictures come from that version)
+version = "0.29.0"
+# the testers' feedback form (Microsoft Forms of the RockFace team); empty until the form is defined
+feedback_url = ""

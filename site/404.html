@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}">
+  <head>
+{{> head}}
+    <meta name="robots" content="noindex" />
+  </head>
+  <body>
+{{> header}}
+    <main id="main">
+      <section class="section final-cta" aria-labelledby="nf-title">
+        <div class="container">
+          <p class="eyebrow eyebrow-center">404</p>
+          <h1 id="nf-title">{{T_NOT_FOUND}}</h1>
+          <p>{{T_NOT_FOUND_TEXT}}</p>
+          <div class="actions actions-center">
+            <a class="btn btn-primary" href="{{ROOT}}">RockFace Suite</a>
+            <a class="btn btn-ghost" href="{{ROOT}}guide/">{{T_GUIDE}}</a>
+          </div>
+        </div>
+      </section>
+    </main>
+{{> footer}}
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{HTML_LANG}}">
+  <head>
+{{> head}}
+  </head>
+  <body>
+{{> header}}
+    <main id="main" class="container doc-layout">
+      <aside class="doc-nav" aria-label="{{T_GUIDE}}">
+        <h2>{{T_GUIDE}}</h2>
+{{DOC_NAV}}
+        <h2>{{T_DOWNLOADS}}</h2>
+        <ol>
+          <li><a href="{{AROOT}}downloads/{{GUIDE_PDF}}">{{T_GUIDE_PDF}}</a></li>
+          <li><a href="{{ROOT}}#feedback">{{T_FEEDBACK}}</a></li>
+        </ol>
+      </aside>
+      <article class="prose">
+{{DOC_BODY}}
+        <nav class="doc-pager" aria-label="{{T_PAGES}}">{{DOC_PAGER}}</nav>
+      </article>
+    </main>
+{{> footer}}
+  </body>
+</html>
