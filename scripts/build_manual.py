@@ -174,7 +174,7 @@ def build(lang: str) -> Path:
             chunks.append(chapter(lang, slug, text, tmp, slugs))
     md = "\n\n".join(chunks)
     (tmp / "guide.md").write_text(md, encoding="utf-8")
-    values = {"LOGO": (SITE / "assets" / "apple-touch-icon.png").as_posix(), "SUBTITLE": T["subtitle"],
+    values = {"LOGO": (SITE / "assets" / ("logo-512.png" if (SITE / "assets" / "logo-512.png").exists() else "apple-touch-icon.png")).as_posix(), "SUBTITLE": T["subtitle"],
               "SLOGAN": T["slogan"], "INTRO": T["intro"], "VERSIONLABEL": T["version"], "VERSION": version,
               "DATE": dt.date.today().isoformat(), "SITETEXT": T["site"], "SITEURL": site_url() + T["web"] + "guide/"}
     cover = re.sub(r"@@([A-Z]+)@@", lambda m: values[m.group(1)], COVER)
