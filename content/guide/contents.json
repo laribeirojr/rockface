@@ -133,7 +133,10 @@
     "ai_segmentation",
     "ai_generation_spots",
     "mio",
-    "mio_skills"
+    "mio_skills",
+    "mio_scripts",
+    "connectors",
+    "mcp_server"
    ]
   }
  ]

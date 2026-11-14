@@ -2,6 +2,11 @@
 # T_* are the words of the header, footer and guide pages; H_* the home page.
 
 [en]
+H_MAN_EYEBROW = "Manuals"
+H_MAN_TITLE = "One detailed manual per application"
+H_MAN_TEXT = "Every function, option and field explained with examples, a tutorial on ILLUSTRATIVE data, and a FAQ — plus a manual of Mio with a catalogue of tested prompts, and one of Python scripting. The manuals are in Portuguese first; the English and Spanish editions follow."
+H_MAN_MIO = "Mio — prompts and automation"
+H_MAN_PY = "RockFace and Python"
 T_SKIP = "Skip to content"
 T_HOME_LABEL = "RockFace Suite home"
 T_SECTIONS = "Sections"
@@ -93,6 +98,11 @@ H_FINAL_TITLE = "Open the illustrative example and look around."
 H_FINAL_TEXT = "The guide walks through every function with invented samples marked ILLUSTRATIVE."
 
 ["pt-br"]
+H_MAN_EYEBROW = "Manuais"
+H_MAN_TITLE = "Um manual detalhado para cada aplicação"
+H_MAN_TEXT = "Cada função, opção e campo explicado com exemplos, um tutorial com dados ILUSTRATIVOS e perguntas frequentes — e ainda um manual da Mio com um catálogo de perguntas conferidas, e um de scripts em Python."
+H_MAN_MIO = "Mio — perguntas e automação"
+H_MAN_PY = "RockFace e Python"
 T_SKIP = "Pular para o conteúdo"
 T_HOME_LABEL = "Início do RockFace Suite"
 T_SECTIONS = "Seções"
@@ -184,6 +194,11 @@ H_FINAL_TITLE = "Abra o exemplo ilustrativo e explore."
 H_FINAL_TEXT = "O guia percorre cada função com amostras inventadas marcadas ILLUSTRATIVE."
 
 [es]
+H_MAN_EYEBROW = "Manuales"
+H_MAN_TITLE = "Un manual detallado para cada aplicación"
+H_MAN_TEXT = "Cada función, opción y campo explicado con ejemplos, un tutorial con datos ILUSTRATIVOS y preguntas frecuentes — además de un manual de Mio con un catálogo de preguntas comprobadas, y uno de scripts en Python. Los manuales están primero en portugués; las ediciones en español e inglés vienen después."
+H_MAN_MIO = "Mio — preguntas y automatización"
+H_MAN_PY = "RockFace y Python"
 T_SKIP = "Saltar al contenido"
 T_HOME_LABEL = "Inicio de RockFace Suite"
 T_SECTIONS = "Secciones"

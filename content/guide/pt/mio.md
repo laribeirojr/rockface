@@ -37,6 +37,19 @@ computador, no processador ou na placa de vídeo — permite entender perguntas 
 
 Em qualquer caixa de busca que fala com a Mio (a do Explorer), um texto que começa com **@mio** vai para o painel.
 
+### Perguntas que a Mio entende sem condições (0.31)
+
+* **O tamanho do projeto** — *quantas descrições há?* → "O projeto tem 48 descrições."
+* **Uma estatística por grupo** — *porosidade média por fácies*, *permeabilidade média por poço*, *compare a
+  porosidade entre os campos*: uma linha por fácies (poço, formação, campo, zona, bacia, tipo de amostra, tipo de
+  rocha) com a média, o número de descrições e o intervalo, e depois o total.
+* **O que é um termo** — *o que é caulinita?*, *defina dolomita*: o termo da nomenclatura, o seu código, os nomes nas
+  outras línguas, o grupo, as fontes da literatura e quantas descrições do projeto o têm.
+* **O que falta** — *amostras sem porosidade*, *faltam permeabilidades?*, *amostras do poço X sem porosidade*: as
+  descrições sem o número, para completar.
+* **As idades** — *qual a idade do cimento de calcita?*, *quais idades U-Pb temos?*: as idades U-Pb salvas no projeto
+  (aba **Datação U-Pb** do Explorer), com o erro a 95 %, o MSWD e o número de pontos.
+
 ### Busca em linguagem natural no Explorer
 
 1. **Explorer** → digite na caixa *Buscar em linguagem natural…* (por exemplo *amostras com barita e porosidade acima
@@ -93,7 +106,7 @@ Os modelos oferecidos (todos com licenças permissivas, quantização Q4_K_M):
   permeabilidade, profundidade, totais) e as análises pontuais; as palavras são comparadas sem acentos e sem plural,
   com tolerância de uma letra nas palavras longas; os números se ligam à palavra numérica mais próxima, os hábitos ao
   constituinte mais próximo.
-* **As ferramentas.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide` — todas só leem.
+* **As ferramentas.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide`, `define`, `ages` — todas só leem.
   As **skills** da Mio as encadeiam (página *Skills da Mio*).
 * **Privacidade.** O modelo roda no computador; um endereço de servidor em outro computador é recusado a menos que
   você permita explicitamente, porque as perguntas e os registros mostrados ao modelo sairiam do computador.

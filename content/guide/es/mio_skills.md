@@ -67,7 +67,7 @@ Las skills que trae RockFace:
 | `title`, `description` | mostrados en la lista, en inglés, portugués y español |
 | `triggers` | frases que llaman la skill (los acentos y las mayúsculas no importan) |
 | `inputs` | valores leídos de la pregunta: `{"field": "well"}` (cualquier campo de la identificación: pozo, formación, facies, campo, cuenca, zona…) o `{"field": "sample"}` (el nombre de una descripción); `{question}` siempre está disponible |
-| `steps` | las herramientas, en orden: `search`, `count` (`question`), `stats` (`number`, `question`), `values` (`field`, `question`), `missing` (`number`, `question`), `describe` (`sample`), `suggest` (`sample`), `guide` (`question`) |
+| `steps` | las herramientas, en orden: `search`, `count` (`question`), `stats` (`number`, `question`; 0.31: `statistic` y `group`, p. ej. `facies`), `values` (`field`, `question`), `missing` (`number`, `question`), `describe` (`sample`), `suggest` (`sample`), `guide` (`question`), `ages` (`question`, 0.31) |
 
 `number` es `concepto.atributo` como en el Explorer: `petrophysics.porosity`, `petrophysics.permeability`,
 `petrophysics.grain_density`, `identification.top_depth`, `totals.cement`, `totals.carbonate_cement`…

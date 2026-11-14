@@ -35,6 +35,19 @@ computer, on the processor or the graphics card — lets her understand freer qu
 
 In any search box that talks to Mio (the Explorer's), a text that starts with **@mio** goes to the panel.
 
+### Questions Mio answers without conditions (0.31)
+
+* **The size of the project** — *how many descriptions are there?* → "The project has 48 descriptions."
+* **A statistic by group** — *average porosity by facies*, *mean permeability per well*, *compare porosity across
+  fields*: one line per facies (well, formation, field, zone, basin, sample type, rock type) with the mean, the number
+  of descriptions and the range, then the total.
+* **What a term is** — *what is kaolinite?*, *define dolomite*: the nomenclature term, its code, its names in the
+  other languages, its group, its literature sources and how many descriptions of the project have it.
+* **What is missing** — *samples missing permeability*, *which samples have no porosity?*: the descriptions
+  without the number, to complete.
+* **The ages** — *how old is the calcite cement?*, *which U-Pb ages do we have?*: the U-Pb ages saved in the project
+  (Explorer tab **U-Pb dating**), with the 95 % error, the MSWD and the number of spots.
+
 ### Plain-language search in the Explorer
 
 1. **Explorer** → type in the box *Search in plain language…* (for example *samples with barite and porosity above
@@ -90,7 +103,7 @@ The models offered (all with permissive licences, Q4_K_M quantization):
   in three languages), the values of the identification (wells, formations, facies…), the analyses (porosity,
   permeability, depth, totals) and the spot analyses; words are compared without accents and plurals, with one
   letter of tolerance for long words; numbers attach to the nearest number word, habits to the nearest constituent.
-* **The tools.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide` — all read only.
+* **The tools.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide`, `define`, `ages` — all read only.
   Mio's **skills** chain them (*Mio's skills* page).
 * **Privacy.** The model runs on the computer; a server address on another computer is refused unless you allow it
   explicitly, because the questions and the records shown to the model would leave the computer.

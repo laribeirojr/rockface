@@ -38,6 +38,19 @@ otras grafías ("baryte", "caolín"), sinónimos ("romboedros de dolomita"), pal
 
 En cualquier cuadro de búsqueda que habla con Mio (el del Explorer), un texto que empieza con **@mio** va al panel.
 
+### Preguntas que Mio entiende sin condiciones (0.31)
+
+* **El tamaño del proyecto** — *¿cuántas descripciones hay?* → "El proyecto tiene 48 descripciones."
+* **Una estadística por grupo** — *porosidad media por facies*, *permeabilidad media por pozo*, *compara la porosidad
+  entre los campos*: una línea por facies (pozo, formación, campo, zona, cuenca, tipo de muestra, tipo de roca) con la
+  media, el número de descripciones y el intervalo, y después el total.
+* **Qué es un término** — *¿qué es caolinita?*, *define dolomita*: el término de la nomenclatura, su código, sus
+  nombres en los otros idiomas, el grupo, las fuentes de la literatura y cuántas descripciones del proyecto lo tienen.
+* **Lo que falta** — *muestras sin porosidad*, *muestras del pozo X sin permeabilidad*: las descripciones sin el
+  número, para completar.
+* **Las edades** — *¿qué edad tiene el cemento de calcita?*, *¿qué edades U-Pb tenemos?*: las edades U-Pb guardadas en
+  el proyecto (pestaña **Datación U-Pb** del Explorer), con el error al 95 %, el MSWD y el número de puntos.
+
 ### Búsqueda en lenguaje natural en el Explorer
 
 1. **Explorer** → escriba en el cuadro *Buscar en lenguaje natural…* (por ejemplo *muestras con barita y porosidad
@@ -95,7 +108,7 @@ Los modelos ofrecidos (todos con licencias permisivas, cuantización Q4_K_M):
   análisis (porosidad, permeabilidad, profundidad, totales) y los análisis puntuales; las palabras se comparan sin
   acentos ni plurales, con tolerancia de una letra en las palabras largas; los números se unen a la palabra numérica
   más cercana, los hábitos al constituyente más cercano.
-* **Las herramientas.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide` — todas solo
+* **Las herramientas.** `search`, `count`, `stats`, `values`, `describe`, `missing`, `suggest`, `guide`, `define`, `ages` — todas solo
   leen. Las **skills** de Mio las encadenan (página *Skills de Mio*).
 * **Privacidad.** El modelo funciona en la computadora; una dirección de servidor en otra computadora se rechaza salvo
   que usted la permita expresamente, porque las preguntas y los registros mostrados al modelo saldrían de la
