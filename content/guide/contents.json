@@ -41,6 +41,7 @@
     "exchange",
     "exports",
     "catalogue_exchange",
+    "description_xml_import",
     "well_trajectory",
     "nomenclature_knowledge_base"
    ]

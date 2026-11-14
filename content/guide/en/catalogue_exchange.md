@@ -53,7 +53,9 @@ prj.import_mapped_xml("descriptions.xml", mapping)
 ## Limits and common problems
 
 * A connector to a corporate sample catalogue will be added when its interface is documented to RockFace.
-* An XML of another program and the "Touchstone format" will be named so only after real files have been read.
+* Thin-section descriptions in XML (ThinPetrographicDescription) are read since 0.32: see
+  [Importing descriptions from another program (XML)](description_xml_import.md).
+  The "Touchstone format" will be named so only after a real Touchstone file with a composition has been read.
 
 ## Coverage
 

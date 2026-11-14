@@ -55,7 +55,9 @@ prj.import_mapped_xml("descripciones.xml", mapeo)
 ## Límites y problemas comunes
 
 * Un conector a un catálogo corporativo de muestras se agregará cuando su interfaz esté documentada para RockFace.
-* El XML de otro programa y el "formato de Touchstone" solo se llamarán así después de leer archivos reales.
+* Las descripciones de láminas en XML (ThinPetrographicDescription) se leen desde la 0.32: vea
+  [Importar descripciones de otro programa (XML)](description_xml_import.md).
+  El "formato de Touchstone" solo se llamará así después de leer un archivo real de Touchstone con composición.
 
 ## Cobertura
 
