@@ -45,6 +45,10 @@ RockFace.
   composición. Un atributo (localización, hábito, modificador, relación paragenética) sin correspondencia, o que el
   término de RockFace no acepta, sale de la línea y también va a las notas. Asocie el número e importe de nuevo con
   **Reemplazar**.
+* **Términos genéricos.** Cuando el otro programa registra cuarzo, feldespato, sílice o carbonato sin decir
+  de qué tipo, la línea pasa al término indiferenciado de RockFace (Folk 1980): cuenta en los totales de cuarzo,
+  feldespato, sílice o carbonato, y el diagrama QmFLt dice que no puede situar una muestra con cuarzo de tipo no
+  indicado.
 * **Identificación.** Descripción, lámina, testigo, caja, plug, pozo o afloramiento, profundidades de tope y base,
   campo, unidad, cuenca, país, estado, institución, petrógrafo, observación y usos van a sus campos. Lugar, proyecto,
   digitador, fechas de edición, clase de roca, soporte y el ambiente interpretado no tienen campo en RockFace: se

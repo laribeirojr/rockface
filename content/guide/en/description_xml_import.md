@@ -42,6 +42,9 @@ descriptions.
 * **Nothing is guessed.** A line whose term has no match is kept as text in the composition notes. An attribute
   (location, habit, modifier, paragenetic relation) without a match, or one the RockFace term does not take, is left
   out of the line and written in the notes too. Map the number and import again with **Replace**.
+* **Generic terms.** When the other program records quartz, feldspar, silica or carbonate without saying
+  which kind, the line becomes RockFace's undifferentiated term (Folk 1980): it counts in the totals of quartz,
+  feldspar, silica or carbonate, and the QmFLt diagram says it cannot place a sample with quartz of no told kind.
 * **Identification.** Description, thin section, core, box, plug, well or outcrop, top and base depths, field, unit,
   basin, country, state, institution, petrographer, observation and uses go to their fields. Place, project, typist,
   edition dates, rock class, support and the interpreted environment have no field in RockFace: they are written,

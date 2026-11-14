@@ -42,6 +42,9 @@ pontos e porcentagens e o ambiente diagenético interpretado, e acrescenta tudo 
 * **Nada é adivinhado.** Uma linha cujo termo não tem correspondência fica como texto nas notas da composição. Um
   atributo (localização, hábito, modificador, relação paragenética) sem correspondência, ou que o termo do RockFace não
   aceita, sai da linha e também vai para as notas. Ligue o número e importe de novo com **Substituir**.
+* **Termos genéricos.** Quando o outro programa registra quartzo, feldspato, sílica ou carbonato sem dizer de
+  que tipo, a linha vira o termo indiferenciado do RockFace (Folk 1980): conta nos totais de quartzo, feldspato,
+  sílica ou carbonato, e o diagrama QmFLt diz que não pode situar uma amostra com quartzo de tipo não informado.
 * **Identificação.** Descrição, lâmina, testemunho, caixa, plug, poço ou afloramento, profundidades de topo e base,
   campo, unidade, bacia, país, estado, instituição, petrógrafo, observação e usos vão para os seus campos. Lugar,
   projeto, digitador, datas de edição, classe da rocha, suporte e o ambiente interpretado não têm campo no RockFace:

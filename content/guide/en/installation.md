@@ -1,0 +1,116 @@
+# Installing RockFace
+
+## What it is for
+
+RockFace Suite is installed from one file per computer. The five programs — Petro, Atlas, Explorer, Lab and MC —
+and the `rockface` command line come together, in one of two editions: **RockFace Suite** (everything except the
+neural networks) and **RockFace Suite AI** (the same, plus the AI models: applying them and training them on the
+processor). The same installation works on a project file and on the team's shared database (server mode).
+
+## Before you start
+
+* **Which file.** The downloads page lists, for each version:
+
+| Computer | File (RockFace Suite / RockFace Suite AI) |
+|---|---|
+| Windows 10 or 11, 64-bit | `RockFace-Suite-<version>-windows-x64-setup.exe` / `RockFace-Suite-AI-…-setup.exe` |
+| Windows, without installing | `…-windows-x64-portable.zip` |
+| macOS 11 or later, Apple silicon (M1–M4) | `…-macos-arm64.dmg` |
+| macOS 11 or later, Intel | `…-macos-x86_64.dmg` |
+| Linux x86_64 (Ubuntu, Debian, Mint, Fedora, RHEL, Rocky, Alma, openSUSE, Arch, Manjaro…) | `…-linux-x86_64.AppImage` |
+| Linux, a plain folder | `…-linux-x86_64.tar.gz` |
+
+* **Which edition.** Choose **AI** to segment with the shipped models, train your own and use the AI tabs of Lab
+  and MC. Without AI everything else works and the installer is smaller. In an installed program, **Lab → AI →
+  Hardware and device** tells which edition fits this computer.
+* **Space.** About 1 GB for RockFace Suite and 2 GB for RockFace Suite AI.
+
+## Step by step
+
+**Windows**
+
+1. Run the `…-setup.exe`. It installs for your user without administrator rights (or for every user, if you
+   choose), after you accept the licence.
+2. If Windows SmartScreen says "Windows protected your PC" (the test versions are not signed yet): **More info →
+   Run anyway**.
+3. The Start menu has RockFace Petro, Atlas, Explorer, Lab and MC. Tick **Add the rockface command line to the
+   PATH** to use `rockface` in a terminal. Uninstall from Settings → Apps.
+
+**macOS**
+
+1. Open the `.dmg` and drag **RockFace Suite** onto **Applications**.
+2. The first time (the test versions are not signed with an Apple Developer ID yet): Control-click the app in
+   Applications → **Open** → **Open**; on macOS 15 and later, System Settings → **Privacy & Security** → **Open
+   Anyway**.
+3. The app opens RockFace Petro; Atlas, Explorer, Lab and MC are opened from Petro or from the terminal.
+
+**Linux**
+
+1. Make the AppImage executable and install it in your menu:
+
+```bash
+chmod +x RockFace-Suite-*-linux-x86_64.AppImage
+./RockFace-Suite-*-linux-x86_64.AppImage --install      # menu entries for the five programs, .rockface files
+```
+
+2. Or extract the `.tar.gz` and run its installer, which first offers to install the system libraries that Qt
+   needs with your distribution's package manager (apt, dnf, zypper or pacman):
+
+```bash
+tar xzf RockFace-Suite-*-linux-x86_64.tar.gz
+cd RockFace-Suite-*/ && ./install.sh                     # for your user; sudo ./install.sh for every user
+```
+
+3. Open RockFace Petro from the menu, or run `rockface petro` (the installer puts `rockface` in `~/.local/bin`).
+
+**Then, on every system:** run **Help → Run the self-test…** once (see
+[Self-test of an installation](selftest.md)).
+
+## Options
+
+| Option | What it does |
+|---|---|
+| Windows: for me / for every user | Per-user installation (no administrator rights) or in Program Files |
+| Windows: desktop icon, command line on the PATH | Both unticked by default |
+| Linux `--install` / `--uninstall` (AppImage) | Adds or removes the menu entries, icons and the `.rockface` file type |
+| Linux `install.sh --prefix DIR`, `--no-system-packages`, `--uninstall` | Where it goes; skip the package manager; remove it |
+| `ROCKFACE_AI_DEVICE` | The device of the AI models (cpu, directml, coreml) for one session |
+
+## How it works
+
+* Each installer carries its own Python and every library: nothing else is installed on the computer, and the
+  installed programs do not change a Python installation you may have.
+* The AI edition carries ONNX Runtime (applying models; on Windows with DirectML, which uses NVIDIA, AMD and Intel
+  graphics cards; on macOS with Core ML) and PyTorch for the processor (training). NVIDIA CUDA is not in the
+  installers of this version.
+* On Linux the AppImage runs on distributions from 2022 on (glibc 2.35 or later). Qt needs a few system libraries
+  (OpenGL, EGL, fontconfig, xkbcommon, the XCB libraries); desktop distributions have them, and `install.sh`
+  installs what is missing with the distribution's own package manager after asking.
+* Preferences are kept in the user's folder, so a new version installed over the old one keeps them.
+* Every file has a SHA-256 checksum on the downloads page (`SHA256SUMS.txt`): `sha256sum -c SHA256SUMS.txt
+  --ignore-missing` on Linux, `shasum -a 256` on macOS, `certutil -hashfile <file> SHA256` on Windows.
+
+## From a script
+
+```python
+import rockface.api as rf
+
+print(rf.installation())     # version, installed or from source, edition ("ai" or "standard"), system
+```
+
+From a terminal: `rockface --version`, `rockface ai info` (the device and the AI found), `rockface selftest`.
+
+## Limits and common problems
+
+* **Linux: "AppImages require FUSE".** Install `libfuse2` (Ubuntu 22.04: `sudo apt install libfuse2`; Ubuntu 24.04
+  and later: `sudo apt install libfuse2t64`), or run `./…AppImage --appimage-extract-and-run`, or use the `.tar.gz`.
+* **Linux: "could not load the Qt platform plugin xcb".** A system library is missing: run `install.sh` of the
+  `.tar.gz` (it installs them), or install `libxcb-cursor0` and `libxkbcommon-x11-0` (Debian, Ubuntu) or
+  `xcb-util-cursor` and `libxkbcommon-x11` (Fedora, RHEL, openSUSE, Arch).
+* **A server or a computer without a screen.** The command line works without one: `QT_QPA_PLATFORM=offscreen
+  rockface selftest`.
+* **ARM Linux and 32-bit systems** have no installer in this version.
+
+## Coverage
+
+1.0 (installers for Windows, macOS and Linux, with and without AI; ROADMAP).

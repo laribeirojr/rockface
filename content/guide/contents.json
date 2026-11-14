@@ -11,11 +11,13 @@
    },
    "pages": [
     "getting_started",
+    "installation",
     "projects_descriptions",
     "scripting",
     "server",
     "help_plugins",
-    "feedback"
+    "feedback",
+    "selftest"
    ]
   },
   {
