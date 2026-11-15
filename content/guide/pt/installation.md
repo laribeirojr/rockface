@@ -9,7 +9,8 @@ instalação trabalha num arquivo de projeto e no banco de dados compartilhado d
 
 ## Antes de começar
 
-* **Qual arquivo.** A página de downloads traz, para cada versão:
+* **Qual arquivo.** A [página de downloads](https://github.com/laribeirojr/rockface-releases/releases) (na fase de testes, aberta aos testadores convidados, com a conta
+  do GitHub) traz, para cada versão:
 
 | Computador | Arquivo (RockFace Suite / RockFace Suite AI) |
 |---|---|
@@ -83,7 +84,7 @@ cd RockFace-Suite-*/ && ./install.sh                     # for your user; sudo .
 * A edição AI leva o ONNX Runtime (aplicar modelos; no Windows com o DirectML, que usa placas de vídeo NVIDIA, AMD e
   Intel; no macOS com o Core ML) e o PyTorch para o processador (treinamento). O NVIDIA CUDA não está nos
   instaladores desta versão.
-* No Linux o AppImage roda em distribuições de 2022 em diante (glibc 2.35 ou mais nova). O Qt precisa de algumas
+* No Linux o AppImage roda em distribuições de 2022 em diante (glibc 2.34 ou mais nova: RHEL, Rocky e Alma 9 e as mais novas). O Qt precisa de algumas
   bibliotecas do sistema (OpenGL, EGL, fontconfig, xkbcommon, as bibliotecas XCB); as distribuições de desktop já as
   têm, e o `install.sh` instala o que faltar com o gerenciador de pacotes da própria distribuição, depois de
   perguntar.

@@ -51,6 +51,7 @@ SITE_URL = f"{ORIGIN}{BASE}/"
 PAGE_BUDGET = 450_000            # bytes of HTML + CSS + JS + images referenced by one page (lazy images excluded)
 VERSION = CONFIG["rockface"]["version"]
 FEEDBACK_URL = CONFIG["rockface"].get("feedback_url", "").strip()
+DOWNLOADS_URL = CONFIG["rockface"].get("downloads_url", "").strip()
 
 # site language → (URL prefix, html lang, og locale, guide folder)
 LANGS = {
@@ -99,7 +100,7 @@ def common_values(lang: str, rel_root: str, url_path: str, title: str, descripti
     return {
         **{k: v for k, v in S.items() if isinstance(v, str)},
         "AROOT": aroot, "ROOT": rel_root, "HTML_LANG": html_lang, "OG_LOCALE": locale, "IMG_LANG": glang,
-        "GUIDE_PDF": pdf_name(glang), "VERSION": VERSION,
+        "GUIDE_PDF": pdf_name(glang), "VERSION": VERSION, "DOWNLOADS_URL": DOWNLOADS_URL,
         "URL_EN": (aroot + url_path) or "./", "URL_PT": aroot + "pt-br/" + url_path, "URL_ES": aroot + "es/" + url_path,
         "CUR_EN": str(lang == "en").lower(), "CUR_PT": str(lang == "pt-br").lower(),
         "CUR_ES": str(lang == "es").lower(),

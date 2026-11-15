@@ -9,7 +9,8 @@ processor). The same installation works on a project file and on the team's shar
 
 ## Before you start
 
-* **Which file.** The downloads page lists, for each version:
+* **Which file.** The [downloads page](https://github.com/laribeirojr/rockface-releases/releases) (during the testing phase, open to the invited testers signed in to
+  GitHub) lists, for each version:
 
 | Computer | File (RockFace Suite / RockFace Suite AI) |
 |---|---|
@@ -83,7 +84,7 @@ cd RockFace-Suite-*/ && ./install.sh                     # for your user; sudo .
 * The AI edition carries ONNX Runtime (applying models; on Windows with DirectML, which uses NVIDIA, AMD and Intel
   graphics cards; on macOS with Core ML) and PyTorch for the processor (training). NVIDIA CUDA is not in the
   installers of this version.
-* On Linux the AppImage runs on distributions from 2022 on (glibc 2.35 or later). Qt needs a few system libraries
+* On Linux the AppImage runs on distributions from 2022 on (glibc 2.34 or later: RHEL, Rocky and Alma 9 and newer). Qt needs a few system libraries
   (OpenGL, EGL, fontconfig, xkbcommon, the XCB libraries); desktop distributions have them, and `install.sh`
   installs what is missing with the distribution's own package manager after asking.
 * Preferences are kept in the user's folder, so a new version installed over the old one keeps them.
