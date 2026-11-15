@@ -21,9 +21,10 @@ otras grafías ("baryte", "caolín"), sinónimos ("romboedros de dolomita"), pal
 ## Antes de empezar
 
 * Un proyecto abierto con descripciones.
-* Para el modelo de lenguaje: RockFace con el extra `llm` (`pip install "rockface-suite[llm]"`, que instala
-  llama-cpp-python), o un servidor local ya en marcha (Ollama, LM Studio o llama-server). No hace falta tarjeta
-  gráfica.
+* Para el modelo de lenguaje: los instaladores de RockFace 1.0.0rc3 o posterior traen llama.cpp (el modelo se
+  descarga en el primer uso — página [Conversar con Mio](mio_chat.md)); desde el código Python, el extra `llm`
+  (`pip install "rockface-suite[llm]"`); o un servidor local ya en marcha (Ollama, LM Studio o llama-server). No hace
+  falta tarjeta gráfica.
 
 ## Paso a paso
 

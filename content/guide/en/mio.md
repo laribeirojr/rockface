@@ -20,8 +20,10 @@ computer, on the processor or the graphics card — lets her understand freer qu
 ## Before you start
 
 * A project open with descriptions.
-* For the language model: RockFace with the extra `llm` (`pip install "rockface-suite[llm]"`, which installs
-  llama-cpp-python), or a local server already running (Ollama, LM Studio or llama-server). No graphics card is needed.
+* For the language model: the installers of RockFace 1.0.0rc3 or later bring llama.cpp (the model is downloaded on
+  first use — page [Talking with Mio](mio_chat.md)); from the Python source, the extra `llm`
+  (`pip install "rockface-suite[llm]"`); or a local server already running (Ollama, LM Studio or llama-server). No
+  graphics card is needed.
 
 ## Step by step
 

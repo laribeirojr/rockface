@@ -135,6 +135,7 @@
     "ai_setup_hub",
     "ai_segmentation",
     "ai_generation_spots",
+    "mio_chat",
     "mio",
     "mio_skills",
     "mio_scripts",

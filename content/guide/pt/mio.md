@@ -20,9 +20,10 @@ computador, no processador ou na placa de vídeo — permite entender perguntas 
 ## Antes de começar
 
 * Um projeto aberto com descrições.
-* Para o modelo de linguagem: o RockFace com o extra `llm` (`pip install "rockface-suite[llm]"`, que instala o
-  llama-cpp-python), ou um servidor local já em execução (Ollama, LM Studio ou llama-server). Não é preciso placa de
-  vídeo.
+* Para o modelo de linguagem: os instaladores do RockFace 1.0.0rc3 ou mais recente trazem o llama.cpp (o modelo é
+  baixado no primeiro uso — página [Conversar com a Mio](mio_chat.md)); a partir do código Python, o extra `llm`
+  (`pip install "rockface-suite[llm]"`); ou um servidor local já em execução (Ollama, LM Studio ou llama-server). Não
+  é preciso placa de vídeo.
 
 ## Passo a passo
 
