@@ -38,6 +38,7 @@
     "classifications",
     "classifications_packing",
     "counting_uncertainty",
+    "assisted_counting",
     "dictation",
     "diagenesis",
     "analyses_requests",
