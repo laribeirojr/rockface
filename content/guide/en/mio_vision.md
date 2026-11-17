@@ -16,7 +16,7 @@ is written until you tick what you see yourself in the picture, apply it to the 
 
   The window marks the model that fits the card it finds. Each model comes as two files, the language model and its
   image projector; both are Apache-2.0. **llama-cpp-python** reads them (built with CUDA to use the card; the
-  installers' AI edition). Or use a **local server** that already has the model — Ollama (`ollama pull qwen2.5vl:7b`),
+  installers bring it built for the processor). Or use a **local server** that already has the model — Ollama (`ollama pull qwen2.5vl:7b`),
   LM Studio or llama-server — by giving its address (`http://localhost:11434/v1`) and model name.
 * A **picture** of the section: a photograph or slide in the Atlas, the point count's image, or a file. The
   crossed-polarized picture of the same field helps (interference colours, extinction).

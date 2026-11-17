@@ -17,7 +17,7 @@ descripción.
 
   La ventana marca el modelo que cabe en la tarjeta encontrada. Cada modelo viene en dos archivos, el modelo de
   lenguaje y su proyector de imagen; ambos son Apache-2.0. Los lee **llama-cpp-python** (compilado con CUDA para usar
-  la tarjeta; edición de IA de los instaladores). O use un **servidor local** que ya tenga el modelo — Ollama
+  la tarjeta; los instaladores lo traen compilado para el procesador). O use un **servidor local** que ya tenga el modelo — Ollama
   (`ollama pull qwen2.5vl:7b`), LM Studio o llama-server —, indicando su dirección (`http://localhost:11434/v1`) y el
   nombre del modelo.
 * Una **imagen** de la lámina: una foto o lámina entera en el Atlas, la imagen del conteo de puntos o un archivo. La

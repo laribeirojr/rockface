@@ -16,7 +16,7 @@ nada é escrito até você marcar o que você mesmo vê na imagem, aplicar ao fo
 
   A janela marca o modelo que cabe na placa encontrada. Cada modelo vem em dois arquivos, o modelo de linguagem e o
   projetor de imagem; os dois são Apache-2.0. Quem os lê é o **llama-cpp-python** (compilado com CUDA para usar a
-  placa; edição de IA dos instaladores). Ou use um **servidor local** que já tenha o modelo — Ollama
+  placa; os instaladores o trazem compilado para o processador). Ou use um **servidor local** que já tenha o modelo — Ollama
   (`ollama pull qwen2.5vl:7b`), LM Studio ou llama-server —, informando o endereço (`http://localhost:11434/v1`) e o
   nome do modelo.
 * Uma **imagem** da lâmina: uma foto ou lâmina inteira no Atlas, a imagem da contagem de pontos ou um arquivo. A

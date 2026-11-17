@@ -3,28 +3,28 @@
 ## What it is for
 
 RockFace Suite is installed from one file per computer. The five programs — Petro, Atlas, Explorer, Lab and MC —
-and the `rockface` command line come together, in one of two editions: **RockFace Suite** (everything except the
-neural networks) and **RockFace Suite AI** (the same, plus the AI models: applying them and training them on the
-processor). The same installation works on a project file and on the team's shared database (server mode).
+and the `rockface` command line come together, with the AI models (applying them and training them on the processor)
+and Mio. From 1.0.0 there is one edition, with AI. The same installation works on a project file and on the team's shared database (server mode).
 
 ## Before you start
 
 * **Which file.** The [downloads page](https://github.com/laribeirojr/rockface-releases/releases) (during the testing phase, open to the invited testers signed in to
   GitHub) lists, for each version:
 
-| Computer | File (RockFace Suite / RockFace Suite AI) |
+| Computer | File |
 |---|---|
-| Windows 10 or 11, 64-bit | `RockFace-Suite-<version>-windows-x64-setup.exe` / `RockFace-Suite-AI-…-setup.exe` |
+| Windows 10 or 11, 64-bit | `RockFace-Suite-<version>-windows-x64-setup.exe` |
 | Windows, without installing | `…-windows-x64-portable.zip` |
-| macOS 11 or later, Apple silicon (M1–M4) | `…-macos-arm64.dmg` |
-| macOS 11 or later, Intel | `…-macos-x86_64.dmg` |
+| macOS 13 or later, Apple silicon (M1–M4) | `…-macos-arm64.dmg` |
+| macOS 13 or later, Intel | `…-macos-x86_64.dmg` |
 | Linux x86_64 (Ubuntu, Debian, Mint, Fedora, RHEL, Rocky, Alma, openSUSE, Arch, Manjaro…) | `…-linux-x86_64.AppImage` |
 | Linux, a plain folder | `…-linux-x86_64.tar.gz` |
 
-* **Which edition.** Choose **AI** to segment with the shipped models, train your own and use the AI tabs of Lab
-  and MC. Without AI everything else works and the installer is smaller. In an installed program, **Lab → AI →
-  Hardware and device** tells which edition fits this computer.
-* **Space.** About 1 GB for RockFace Suite and 2 GB for RockFace Suite AI.
+* **Earlier versions.** Up to 1.0.0rc3 there were two editions, `RockFace-Suite-…` without AI and
+  `RockFace-Suite-AI-…`. Version 1.0.0 installs over either and keeps the preferences. The edition without AI is no
+  longer published. In an installed program, **Lab → AI → Hardware and device** tells which device the models use
+  on this computer.
+* **Space.** About 2 GB.
 
 ## Step by step
 
@@ -32,7 +32,7 @@ processor). The same installation works on a project file and on the team's shar
 
 1. Run the `…-setup.exe`. It installs for your user without administrator rights (or for every user, if you
    choose), after you accept the licence.
-2. If Windows SmartScreen says "Windows protected your PC" (the test versions are not signed yet): **More info →
+2. If Windows SmartScreen says "Windows protected your PC" (the installers are not signed yet): **More info →
    Run anyway**.
 3. The Start menu has RockFace Petro, Atlas, Explorer, Lab and MC. Tick **Add the rockface command line to the
    PATH** to use `rockface` in a terminal. Uninstall from Settings → Apps.
@@ -40,7 +40,7 @@ processor). The same installation works on a project file and on the team's shar
 **macOS**
 
 1. Open the `.dmg` and drag **RockFace Suite** onto **Applications**.
-2. The first time (the test versions are not signed with an Apple Developer ID yet): Control-click the app in
+2. The first time (the installers are not signed with an Apple Developer ID yet): Control-click the app in
    Applications → **Open** → **Open**; on macOS 15 and later, System Settings → **Privacy & Security** → **Open
    Anyway**.
 3. The app opens RockFace Petro; Atlas, Explorer, Lab and MC are opened from Petro or from the terminal.
@@ -81,7 +81,7 @@ cd RockFace-Suite-*/ && ./install.sh                     # for your user; sudo .
 
 * Each installer carries its own Python and every library: nothing else is installed on the computer, and the
   installed programs do not change a Python installation you may have.
-* The AI edition carries ONNX Runtime (applying models; on Windows with DirectML, which uses NVIDIA, AMD and Intel
+* Every installer carries ONNX Runtime (applying models; on Windows with DirectML, which uses NVIDIA, AMD and Intel
   graphics cards; on macOS with Core ML) and PyTorch for the processor (training). NVIDIA CUDA is not in the
   installers of this version.
 * On Linux the AppImage runs on distributions from 2022 on (glibc 2.34 or later: RHEL, Rocky and Alma 9 and newer). Qt needs a few system libraries
@@ -114,4 +114,4 @@ From a terminal: `rockface --version`, `rockface ai info` (the device and the AI
 
 ## Coverage
 
-1.0 (installers for Windows, macOS and Linux, with and without AI; ROADMAP).
+1.0 (installers for Windows, macOS and Linux; from 1.0.0 one edition, with AI; ROADMAP).
