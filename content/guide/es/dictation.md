@@ -8,8 +8,6 @@ de escribir: los **campos de la descripción** ("selección moderada, subredonde
 El habla se reconoce **en este ordenador** — el audio no se guarda ni se envía — y nada se escribe antes de que el
 petrógrafo vea lo que se entendió.
 
-![La ventana Dictar con las palabras oídas y las propuestas leídas de ellas](../img/es/dictation.webp)
-
 ## Antes de empezar
 
 * Instale una vez las bibliotecas de voz: `pip install rockface[voice]` (whisper.cpp, Vosk y la biblioteca del

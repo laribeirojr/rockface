@@ -8,8 +8,6 @@ por cento, contatos côncavo-convexos") e a **contagem de pontos** ("quartzo mon
 fala é reconhecida **neste computador** — o áudio não é guardado nem enviado — e nada é escrito antes de o petrógrafo
 ver o que foi entendido.
 
-![A janela Ditar com as palavras ouvidas e as propostas lidas delas](../img/pt/dictation.webp)
-
 ## Antes de começar
 
 * Instale uma vez as bibliotecas de voz: `pip install rockface[voice]` (whisper.cpp, Vosk e a biblioteca do

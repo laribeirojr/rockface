@@ -8,8 +8,6 @@ percent, concavo-convex contacts") and the **point count** ("monocrystalline qua
 recognised **on this computer** — the audio is neither kept nor sent anywhere — and nothing is written before the
 petrographer sees what was understood.
 
-![The Dictate window with the words heard and the proposals read from them](../img/en/dictation.webp)
-
 ## Before you start
 
 * Install the voice libraries once: `pip install rockface[voice]` (whisper.cpp, Vosk and the microphone library;
