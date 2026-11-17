@@ -21,6 +21,17 @@
    ]
   },
   {
+   "key": "innovations",
+   "title": {
+    "en": "The six innovations",
+    "pt": "As seis inovações",
+    "es": "Las seis innovaciones"
+   },
+   "pages": [
+    "innovations"
+   ]
+  },
+  {
    "key": "petro",
    "title": {
     "en": "RockFace Petro",
@@ -41,6 +52,7 @@
     "assisted_counting",
     "dictation",
     "mio_vision",
+    "federated_learning",
     "diagenesis",
     "analyses_requests",
     "consistency",
