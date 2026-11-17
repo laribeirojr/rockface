@@ -40,6 +40,7 @@
     "counting_uncertainty",
     "assisted_counting",
     "dictation",
+    "mio_vision",
     "diagenesis",
     "analyses_requests",
     "consistency",
