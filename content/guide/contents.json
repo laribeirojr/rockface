@@ -37,6 +37,7 @@
     "totals",
     "classifications",
     "classifications_packing",
+    "counting_uncertainty",
     "diagenesis",
     "analyses_requests",
     "reports",
