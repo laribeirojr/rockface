@@ -6,8 +6,8 @@ base_path = "/rockface"
 
 [rockface]
 # the version whose guide is published (the guide pages and pictures come from that version)
-version = "1.1.0"
+version = "1.1.1"
 # the testers' feedback form (Microsoft Forms of the RockFace team); empty until the form is defined
-feedback_url = ""
+feedback_url = "https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=oZs17AtjK024M8jm1I-AWavEBND6GiRPixtqMe2f-VxUMEhPOU5NR1hCQVlKUzM0U1M2OFdNWFNWUy4u"
 # the downloads (GitHub releases of the installers; private during the testing phase: invited testers only)
 downloads_url = "https://github.com/laribeirojr/rockface-releases/releases"

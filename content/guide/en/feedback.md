@@ -9,14 +9,17 @@ general or for one function of this guide. The answers go to the RockFace team.
 ## Before you start
 
 * A web browser and a network connection.
-* The form is a Microsoft Forms form of the RockFace team (University of Brasília). Until its address is set, the
-  button says so (below).
+* The form is a Microsoft Forms form of the RockFace team (University of Brasília), in English, Portuguese and
+  Spanish; it opens in the language of your browser. No account is needed, but your name and e-mail are asked, so
+  that the team can answer you.
 
 ## Step by step
 
 1. In RockFace Petro: **Help → Send feedback…**. In RockFace Atlas, Explorer, Lab and MC: the **Send feedback…**
    button of the toolbar.
-2. Your browser opens the form. Say which program and which function you are writing about — the **Coverage**
+2. Your browser opens the form. It asks about you, the installation, what you tried, how easy RockFace is to use,
+   the innovations, a new tool you would like (its context, what it should do and in which program) and any
+   error. Say which program and which function you are writing about — the **Coverage**
    section at the end of each page of this guide gives the items of the function (for example *GT11*), which help
    the team find it.
 3. Describe what you did, what you expected and what happened. Attach a screenshot if it helps; never attach

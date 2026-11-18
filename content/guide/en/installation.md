@@ -103,6 +103,17 @@ From a terminal: `rockface --version`, `rockface ai info` (the device and the AI
 
 ## Limits and common problems
 
+* **macOS: "RockFace-Suite.app is damaged and can't be opened".** The app is not broken: the copies of 1.0.0 and
+  1.1.0 carry an incomplete signature, and macOS 15 and 26 refuse such a downloaded app without an *Open Anyway*
+  button. Click **Cancel** (not *Move to Trash*), drag the app to **Applications**, open **Terminal** and run:
+
+  ```
+  xattr -dr com.apple.quarantine /Applications/RockFace-Suite.app
+  ```
+
+  Then open the app as usual. If macOS still refuses it, run also
+  `codesign --force --deep --sign - /Applications/RockFace-Suite.app` and open it again. From 1.1.1 the installers
+  are signed again after they are built, and this is no longer needed.
 * **Linux: "AppImages require FUSE".** Install `libfuse2` (Ubuntu 22.04: `sudo apt install libfuse2`; Ubuntu 24.04
   and later: `sudo apt install libfuse2t64`), or run `./…AppImage --appimage-extract-and-run`, or use the `.tar.gz`.
 * **Linux: "could not load the Qt platform plugin xcb".** A system library is missing: run `install.sh` of the

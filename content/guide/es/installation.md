@@ -107,6 +107,18 @@ selftest`.
 
 ## Límites y problemas comunes
 
+* **macOS: "RockFace-Suite.app está dañado y no se puede abrir".** La aplicación no está rota: las copias de la 1.0.0
+  y la 1.1.0 llevan una firma incompleta, y macOS 15 y 26 rechazan una aplicación descargada así, sin el botón
+  *Abrir igualmente*. Haga clic en **Cancelar** (no en *Mover a la Papelera*), arrastre la aplicación a
+  **Aplicaciones**, abra **Terminal** y ejecute:
+
+  ```
+  xattr -dr com.apple.quarantine /Applications/RockFace-Suite.app
+  ```
+
+  Luego abra la aplicación como siempre. Si macOS aún la rechaza, ejecute también
+  `codesign --force --deep --sign - /Applications/RockFace-Suite.app` y ábrala de nuevo. Desde la 1.1.1 los
+  instaladores se firman de nuevo después de armarse, y esto ya no hace falta.
 * **Linux: "AppImages require FUSE".** Instale `libfuse2` (Ubuntu 22.04: `sudo apt install libfuse2`; Ubuntu 24.04
   y posteriores: `sudo apt install libfuse2t64`), o ejecute `./…AppImage --appimage-extract-and-run`, o use el
   `.tar.gz`.

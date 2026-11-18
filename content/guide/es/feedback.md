@@ -9,14 +9,17 @@ programa en general o sobre una función de esta guía. Las respuestas van al eq
 ## Antes de empezar
 
 * Un navegador y una conexión de red.
-* El formulario es un Microsoft Forms del equipo de RockFace (Universidad de Brasilia). Mientras su dirección no esté
-  definida, el botón lo avisa (abajo).
+* El formulario es un Microsoft Forms del equipo de RockFace (Universidad de Brasilia), en español, portugués e
+  inglés; se abre en el idioma de su navegador. No necesita una cuenta, pero pide su nombre y correo, para que el
+  equipo pueda responderle.
 
 ## Paso a paso
 
 1. En RockFace Petro: **Ayuda → Enviar opinión…**. En RockFace Atlas, Explorer, Lab y MC: el botón **Enviar opinión…**
    de la barra de herramientas.
-2. El navegador abre el formulario. Diga sobre qué programa y qué función escribe — la sección **Cobertura** al final
+2. El navegador abre el formulario. Pregunta sobre usted, la instalación, lo que probó, la facilidad de uso, las
+   innovaciones, una herramienta nueva que le gustaría (el contexto, lo que debe hacer y en qué programa) y los
+   errores. Diga sobre qué programa y qué función escribe — la sección **Cobertura** al final
    de cada página de esta guía da los ítems de la función (por ejemplo *GT11*), que ayudan al equipo a encontrarla.
 3. Describa lo que hizo, lo que esperaba y lo que pasó. Adjunte una captura de pantalla si ayuda; nunca adjunte datos
    confidenciales.

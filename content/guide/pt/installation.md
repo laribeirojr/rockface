@@ -104,6 +104,18 @@ Num terminal: `rockface --version`, `rockface ai info` (o dispositivo e a IA enc
 
 ## Limites e problemas comuns
 
+* **macOS: "RockFace-Suite.app está danificado e não pode ser aberto".** O aplicativo não está estragado: as cópias
+  da 1.0.0 e da 1.1.0 têm uma assinatura incompleta, e o macOS 15 e 26 recusam um aplicativo baixado assim, sem o
+  botão *Abrir Mesmo Assim*. Clique em **Cancelar** (não em *Mover para o Lixo*), arraste o aplicativo para
+  **Aplicativos**, abra o **Terminal** e rode:
+
+  ```
+  xattr -dr com.apple.quarantine /Applications/RockFace-Suite.app
+  ```
+
+  Depois abra o aplicativo como sempre. Se o macOS ainda o recusar, rode também
+  `codesign --force --deep --sign - /Applications/RockFace-Suite.app` e abra de novo. A partir da 1.1.1 os
+  instaladores são assinados de novo depois de montados, e isso não é mais preciso.
 * **Linux: "AppImages require FUSE".** Instale o `libfuse2` (Ubuntu 22.04: `sudo apt install libfuse2`; Ubuntu
   24.04 e mais novos: `sudo apt install libfuse2t64`), ou execute `./…AppImage --appimage-extract-and-run`, ou use o
   `.tar.gz`.
