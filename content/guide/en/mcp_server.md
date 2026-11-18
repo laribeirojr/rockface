@@ -8,6 +8,9 @@ corporate agent — can then query the samples, read tables, find guide pages an
 in plain language with the user. It is the way to tasks larger than Mio's recipes: the assistant reads the reference
 of the programming interface and writes the script, which you run in RockFace.
 
+Since 1.1.0 Claude Desktop can also work in the open RockFace window, and RockFace has a Claude panel of its own: see
+[Claude in RockFace](claude.md).
+
 ## Before you start
 
 * RockFace installed on the computer, and a project.

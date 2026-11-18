@@ -9,6 +9,9 @@ scripts para o RockFace, conversando em linguagem natural com o usuário. É o c
 receitas da Mio: o assistente lê a referência da interface de programação e escreve o script, que você executa no
 RockFace.
 
+Desde a 1.1.0 o Claude Desktop também pode trabalhar na janela aberta do RockFace, e o RockFace tem um painel do Claude
+próprio: veja [O Claude no RockFace](claude.md).
+
 ## Antes de começar
 
 * O RockFace instalado no computador e um projeto.

@@ -9,6 +9,9 @@ scripts para RockFace, conversando en lenguaje natural con el usuario. Es el cam
 recetas de Mio: el asistente lee la referencia de la interfaz de programación y escribe el script, que usted ejecuta
 en RockFace.
 
+Desde la 1.1.0 Claude Desktop también puede trabajar en la ventana abierta de RockFace, y RockFace tiene su propio panel de
+Claude: vea [Claude en RockFace](claude.md).
+
 ## Antes de empezar
 
 * RockFace instalado en el equipo y un proyecto.
