@@ -158,7 +158,8 @@
     "mio_scripts",
     "connectors",
     "mcp_server",
-    "claude"
+    "claude",
+    "assistants"
    ]
   }
  ]

@@ -20,6 +20,9 @@ Desktop es lo que hace desde el panel.
 Mio sigue igual: local, gratuita y sin internet. Claude es una opción para quien quiere un modelo más fuerte y acepta
 que la conversación vaya a Anthropic.
 
+Desde la 1.2.0 el mismo panel también conversa con ChatGPT y Gemini, y la app de escritorio de ChatGPT y Google
+Antigravity también trabajan en RockFace: vea [ChatGPT y Gemini en RockFace](assistants.md).
+
 ## Antes de empezar
 
 * Para el **panel**: una **clave de la API de Claude**. Se crea en la Claude Console (platform.claude.com → API keys)
@@ -56,7 +59,7 @@ que la conversación vaya a Anthropic.
 * **Propuestas.** Cuando Claude propone campos de la descripción, una ventana los lista **sin marcar**: el campo, el
   valor y las palabras que usó Claude. Marque lo que usted mismo ve, haga clic en **Aplicar las marcadas** y
   **guarde** la descripción como siempre. Nada se escribe antes.
-* **Scripts.** Si activa **Dejar que Claude proponga scripts** (ajustes), Claude puede escribir un script de Python
+* **Scripts.** Si activa **Dejar que los asistentes propongan scripts** (ajustes), Claude puede escribir un script de Python
   para una tarea; se muestra en una ventana y solo se ejecuta al hacer clic en **Ejecutar**. Una descripción con
   cambios sin guardar no se toca.
 * **Navegación.** Claude puede abrir una descripción y mostrar una pestaña; no deja una descripción con cambios sin
@@ -68,7 +71,7 @@ que la conversación vaya a Anthropic.
    `RockFace-Suite.mcpb` (en su carpeta de usuario, `.rockface/claude`), lo abre y activa la ventana en vivo.
 2. Claude Desktop muestra la instalación: haga clic en **Install**. (O abra Claude Desktop → Settings → Extensions y
    arrastre el archivo allí.) En sus opciones puede elegir un **proyecto** — usado cuando no hay una ventana de
-   RockFace abierta — y **Dejar que Claude proponga scripts**.
+   RockFace abierta — y **Dejar que los asistentes propongan scripts**.
 3. En Claude Desktop, pregunte como en el panel: "En RockFace, ¿qué está abierto ahora?", "Mire la imagen de esta
    muestra y proponga la descripción."
 
@@ -77,7 +80,7 @@ se añade a `claude_desktop_config.json` (guardando una copia fechada del archiv
 
 ### La ventana en vivo
 
-**Dejar que Claude trabaje en esta ventana** (ajustes) abre un canal solo en este equipo (127.0.0.1, un puerto al azar
+**Dejar que los asistentes de IA trabajen en esta ventana** (ajustes) abre un canal solo en este equipo (127.0.0.1, un puerto al azar
 y un secreto en un archivo que solo usted puede leer). Activado, Claude Desktop trabaja en la ventana que usted tiene
 abierta; desactivado, trabaja en el proyecto elegido en la extensión, o en nada. Sigue activado en las próximas
 sesiones hasta que lo desactive; se cierra con la ventana.
@@ -121,8 +124,8 @@ proyecto.rockface "pregunta"`, `rockface claude windows` y `rockface mcp serve -
 * "La clave de la API fue rechazada" (401) o "La clave no tiene permiso para esto" (403, a menudo falta de crédito):
   revise la clave en la Claude Console. "Demasiadas solicitudes por ahora" (429) o "Claude está ocupado ahora" (529):
   espere un poco y pregunte de nuevo.
-* Claude Desktop dice que ninguna ventana de RockFace lo deja trabajar: abra RockFace y active **Dejar que Claude
-  trabaje en esta ventana**, o elija un proyecto en las opciones de la extensión.
+* Claude Desktop dice que ninguna ventana de RockFace lo deja trabajar: abra RockFace y active **Dejar que los asistentes de IA
+  trabajen en esta ventana**, o elija un proyecto en las opciones de la extensión.
 * La extensión apunta al RockFace del equipo que la creó; tras reinstalar RockFace en otra carpeta, créela de nuevo.
 * Claude es un modelo general, no un petrógrafo: compare cada propuesta con la imagen, como en *Mio mira*.
 * Sin internet, use Mio.

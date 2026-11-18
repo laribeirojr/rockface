@@ -19,6 +19,9 @@ it does from the panel.
 Mio stays as it is: local, free and offline. Claude is an option for those who want a stronger model and accept
 that the conversation goes to Anthropic.
 
+Since 1.2.0 the same panel also talks to ChatGPT and Gemini, and the ChatGPT desktop app and Google Antigravity
+work in RockFace too: see [ChatGPT and Gemini in RockFace](assistants.md).
+
 ## Before you start
 
 * For the **panel**: a **Claude API key**. It is made in the Claude Console (platform.claude.com → API keys) and is
@@ -53,7 +56,7 @@ that the conversation goes to Anthropic.
 * **Proposals.** When Claude proposes fields of the description, a window lists them **unticked**: the field, the
   value and the words Claude used. Tick what you see yourself, click **Apply the ticked ones**, then **save** the
   description as usual. Nothing is written before that.
-* **Scripts.** If you switch on **Let Claude propose scripts** (settings), Claude may write a Python script for a
+* **Scripts.** If you switch on **Let the assistants propose scripts** (settings), Claude may write a Python script for a
   task; it is shown in a window and runs only when you click **Run**. A description with unsaved changes is not
   touched.
 * **Moving.** Claude may open a description and show a tab; it will not leave a description with unsaved changes.
@@ -64,7 +67,7 @@ that the conversation goes to Anthropic.
    `RockFace-Suite.mcpb` (in your user folder, `.rockface/claude`), opens it and switches on the live window.
 2. Claude Desktop shows the installation: click **Install**. (Or open Claude Desktop → Settings → Extensions and
    drag the file there.) In its options you may choose a **project** — used when no RockFace window is open — and
-   **Let Claude propose scripts**.
+   **Let the assistants propose scripts**.
 3. In Claude Desktop, ask as in the panel: "In RockFace, what is open now?", "Look at the picture of this sample and
    propose the description."
 
@@ -73,7 +76,7 @@ adds itself to `claude_desktop_config.json` (keeping a dated copy of the old fil
 
 ### The live window
 
-**Let Claude work in this window** (settings) opens a channel on this computer only (127.0.0.1, a random port and a
+**Let the AI assistants work in this window** (settings) opens a channel on this computer only (127.0.0.1, a random port and a
 secret in a file only you can read). With it on, Claude Desktop works in the window you have open; with it off, it
 works on the project chosen in the extension, or on nothing. It stays on for the next sessions until you switch it
 off; it closes with the window.
@@ -114,8 +117,8 @@ From the command line: `rockface claude extension`, `rockface claude config`, `r
 * "The API key was refused" (401) or "The key has no permission for this" (403, often no credit left): check
   the key in the Claude Console. "Too many requests for now" (429) or "Claude is busy right now" (529): wait a
   little and ask again.
-* Claude Desktop says no RockFace window lets Claude work in it: open RockFace and switch on **Let Claude work in
-  this window**, or choose a project in the extension's options.
+* Claude Desktop says no RockFace window lets Claude work in it: open RockFace and switch on **Let the AI assistants work
+  in this window**, or choose a project in the extension's options.
 * The extension points at the RockFace of the computer that made it; after reinstalling RockFace in another folder,
   make it again.
 * Claude is a general model, not a petrographer: check every proposal against the picture, as with *Mio looks*.
